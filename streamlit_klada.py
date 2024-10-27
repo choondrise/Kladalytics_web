@@ -12,7 +12,7 @@ st.write("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacin
 # APK download section
 st.markdown(
     """
-    <a href="app-release.apk" download="kladalytics.apk">
+    <a href="app-release.apk" download="app-release.apk">
         <button style="background-color: #4CAF50; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer;">
             <img src="https://upload.wikimedia.org/wikipedia/commons/d/d7/Android_robot.svg" alt="Android Icon" style="width: 20px; height: 20px; vertical-align: middle; margin-right: 10px;">
             Download APK
