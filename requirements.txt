@@ -130,6 +130,7 @@ scikit-learn==1.5.0
 scipy==1.7.1
 seaborn==0.11.2
 Send2Trash==1.8.0
+setuptools==65.5.1
 six==1.16.0
 smmap==5.0.1
 sniffio==1.2.0
@@ -161,6 +162,7 @@ urllib3==2.2.3
 watchdog==4.0.2
 wcwidth==0.2.5
 webencodings==0.5.1
+wheel==0.41.0
 widgetsnbextension==3.5.1
 wikipedia==1.4.0
 wrapt==1.13.3
