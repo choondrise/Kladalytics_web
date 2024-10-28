@@ -9,15 +9,17 @@ st.title("Kladalytics")
 # Display app description
 st.write("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. Cras venenatis euismod malesuada.")
 
-# APK download section
-st.markdown(
-    """
-    <a href="app-release.apk" download="app-release.apk">
-        <button style="background-color: #4CAF50; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer;">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/d/d7/Android_robot.svg" alt="Android Icon" style="width: 20px; height: 20px; vertical-align: middle; margin-right: 10px;">
-            Download APK
-        </button>
-    </a>
-    """,
-    unsafe_allow_html=True
+# Path to your APK file
+apk_file_path = "./app-release.apk"
+
+# Read the APK file as bytes
+with open(apk_file_path, "rb") as file:
+    apk_bytes = file.read()
+
+# Download button with an Android icon
+st.download_button(
+    label="Download APK",
+    data=apk_bytes,
+    file_name="kladalytics.apk",
+    mime="application/vnd.android.package-archive"
 )
