@@ -11,18 +11,19 @@ h1 {
 strong {
     color: green;  /* Set bold text color to green */
 }
+/* Hide the Streamlit footer */
 footer {
-    visibility: hidden; /* Hide the "Hosted with Streamlit" footer */
+    visibility: hidden;
+    height: 0px;  /* Ensure no extra space is left */
+}
+footer:after {
+    content: '';  /* Prevent content from being displayed */
+    display: none;
 }
 </style>
 """
 st.markdown(markdown_settings, unsafe_allow_html=True)
-
-st.markdown("""
-    <style>
-        footer {visibility: hidden;}
-    </style>
-""", unsafe_allow_html=True)
+st.markdown(markdown_settings, unsafe_allow_html=True)
 
 # Display app name
 st.title("Kladalytics")
@@ -30,7 +31,7 @@ st.title("Kladalytics")
 st.write("""
 Release Notes – Version 1.0
 
-# Dobrodošli u prvu verziju aplikacije **Kladalytics**! 🎉  
+Dobrodošli u prvu verziju aplikacije **Kladalytics**! 🎉  
 Vaša platforma za pouzdane savjete o sportskom klađenju od certificiranih tipstera.  
 
 ### **Ključne značajke:**  
