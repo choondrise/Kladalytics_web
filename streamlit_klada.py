@@ -11,9 +11,18 @@ h1 {
 strong {
     color: green;  /* Set bold text color to green */
 }
+footer {
+    visibility: hidden; /* Hide the "Hosted with Streamlit" footer */
+}
 </style>
 """
 st.markdown(markdown_settings, unsafe_allow_html=True)
+
+st.markdown("""
+    <style>
+        footer {visibility: hidden;}
+    </style>
+""", unsafe_allow_html=True)
 
 # Display app name
 st.title("Kladalytics")
@@ -21,21 +30,27 @@ st.title("Kladalytics")
 st.write("""
 Release Notes – Version 1.0
 
-Welcome to the first release of Kladalytics! 🎉 Your go-to platform for reliable sports betting tips from 
-certified tipsters. Here’s what you can expect in this initial version:
+# Dobrodošli u prvu verziju aplikacije **Kladalytics**! 🎉  
+Vaša platforma za pouzdane savjete o sportskom klađenju od certificiranih tipstera.  
 
-**Key Features:**
-- **Certified Tipsters in One Place**: Access tips from verified and trusted tipsters across various sports.
-- **Diverse Sports Betting Options**: From football and basketball to niche sports, find tips for a wide range of games.
-- **Follow Your Favorite Tipsters**: Easily choose and follow tipsters whose insights match your preferences.
-- **Personalized Feed**: Get tips and updates directly in your feed from the tipsters you trust.
+### **Ključne značajke:**  
+- **Certificirani tipsteri na jednom mjestu:** Pristupite savjetima provjerenih i pouzdanih tipstera za razne sportove.  
+- **Raznolike opcije za sportsko klađenje:** Od nogometa i košarke do manje popularnih sportova, pronađite savjete za širok spektar igara.  
+- **Pratite svoje omiljene tipstere:** Jednostavno odaberite i pratite tipstere čiji vam savjeti najviše odgovaraju.  
+- **Personalizirani feed:** Primajte savjete i ažuriranja izravno u svoj feed od tipstera kojima vjerujete.  
 
-**Why You’ll Love It:**
-- Comprehensive coverage of popular and emerging sports, with expert tips for each.
-- User-friendly and sleek design to make finding tips and navigating the app simple.
-- Regular updates and tips to keep you informed and ready for each game.
+---
 
-This is just the start! Stay tuned for more features and improvements based on your feedback.
+### **Upute za instalaciju APK paketa na Android uređaju:**  
+1. Preuzmite APK paket klikom na **gumb za preuzimanje**.  
+2. Otvorite **Postavke** na vašem uređaju i idite na **Sigurnost**.  
+3. Omogućite opciju **Nepoznati izvori** kako biste mogli instalirati aplikacije izvan Google Play trgovine.  
+4. Pronađite preuzetu datoteku u mapi **Preuzimanja** na vašem uređaju.  
+5. Kliknite na APK datoteku i pratite upute za instalaciju.  
+6. Kada se instalacija završi, otvorite aplikaciju i uživajte u **Kladalytics**!  
+
+Ako naiđete na probleme, provjerite jeste li omogućili instalaciju iz nepoznatih izvora ili kontaktirajte podršku.  
+
 """)
 
 # Path to your APK file
