@@ -81,7 +81,7 @@ with open(apk_file_path, "rb") as file:
 
 # Download button with an Android icon
 st.download_button(
-    label="Download APK",
+    label="Preuzmi APK",
     data=apk_bytes,
     file_name="kladalytics.apk",
     mime="application/vnd.android.package-archive"
